@@ -1,0 +1,138 @@
+
+:root {  /*sirve para hacer nuestras propias variables */
+    --blanco : #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+
+
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{   /* esto es para que no se afecte el padding */
+    box-sizing: inherit;
+
+}
+body {                           /*  las dos primeras opciones de arrba es para usar los rems 
+    y que el codigo se adapte mejor a cualquier ordenador*/
+    font-size: 16px;
+    font-family: "Krub", serif;/*si lo colocamos en el body ira en todos los elementos*/
+   
+   
+}
+
+.titulo{   /*no es recomendado usar id*/ 
+    text-align:center;
+    font-size: 3.9rem;
+    color: var(--secundario); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+  
+}
+.titulo{
+
+    font-size : 3rem;
+ 
+}
+.titulo span{
+    font-size :2rem; 
+    
+}
+.nav-main{
+    color : var(--blanco);
+    display:flex;
+    flex-direction: column;/* nos habilita nuevas propiedades para las barras de navegacion*/
+    justify-content: space-between; /* esto genera  la separacion entre las nav*/
+   /* flex-direction: column;*/ /* esto hace que las barras de navegaciones esten acomodadas por columna*/
+   /* el flex end puede ser para ponerlos al final*/
+   align-items: center;/* esto es como para poder aalinear aliniear horizontalmente*/
+    
+
+}
+.nav-main a{
+    color : var(--blanco);
+    text-decoration: none;/* esto es para que en las palabras de navegacion no se vean con una linea abajo, en si el none es para que no se vea nada */
+    font-weight: 700;/* esto es para hacerlo en negritas*/
+    padding: 1rem;/* esto lo que hace es darle grosor a la barra de color, a diferencia del margin que solo da el espaciado, sin embargo
+    depende de el espacio del  margin el grosor del padding*/
+    
+
+}
+.nav-main a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+   
+}
+.contenedor{  /* esto en si es como se va a ver el disenio de las navegaciones*/
+    max-width: 120rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top: 0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+    margin-left: auto; /* lo q explique con el de r*/
+    margin: 0 auto 0 auto;  /* esto es exactamente lo mismo que lo de arriba, funciona como un reloj*/
+    
+  
+}
+.nav-bg{
+    background-color: var(--secundario);/* cuando ponemos esto, se aplica a tooodo el color de fondo*/
+
+}
+@media(min-width: 480px) {
+    body{
+        background-color: var(--blanco);
+        
+    }
+    
+}
+@media (min-width: 480px) {
+    h1 {
+
+    } 
+    
+}
+@media (min-width:748px ) { 
+    .nav-main{
+        flex-direction: row;
+        
+       
+    
+        
+        justify-content:space-between;
+    }
+    
+}
+.hero{
+    background-image: url(../img/hero.jpg);/* esto es para poder importar la imagen desde css*/
+    background-size: cover; /* esto es para que cubra todo el espacio de la pagina*/
+    padding: 20px;
+    background-repeat: no-repeat;
+   height: 450px;
+   position: relative; /* esto es necesario para poder tener una posicion absoluta en el contendo hero*/
+}
+.contenido-hero{
+    position: absolute;
+     background-color: rgba(0,0,0,.5 );/* esto espara poder darle oscuridad a la imagen*/
+    bottom: 0;
+    left: 0;
+    top:0;
+    
+    right: 0;
+   
+  
+
+
+}
+
+
+    
+
+.map{
+   
+    
+}
+.servicios{
+    margin: 0 auto 0 2rem;
+}
