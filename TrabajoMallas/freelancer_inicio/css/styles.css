@@ -144,3 +144,56 @@ body {                           /*  las dos primeras opciones de arrba es para 
 .servicios{
     margin: 0 auto 0 2rem;
 }
+
+.contenedorrr {
+    position: relative;
+    display: inline-block;
+    width: 400px; /* Ajusta el tamaño según tu necesidad */
+    overflow: hidden;
+}
+
+.imagen {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.contenedorrr::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+    transition: background 1s ease;
+}
+
+.texto1 {
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro de su contenedor */
+    top: 10%; /* Lo posiciona al 50% desde la parte superior del contenedor */
+    left: 50%; /* Lo posiciona al 50% desde la parte izquierda del contenedor */
+    transform: translate(-50%, -50%); /* Centra el elemento exactamente en el medio usando transformación */
+    color: white; /* Establece el color del texto en blanco */
+    font-size: 20px; /* Define el tamaño de la fuente en 20 píxeles */
+    font-weight: bold; /* Hace que el texto sea en negrita */
+    text-align: center; /* Centra el texto dentro del elemento */
+    opacity: 0; /* Inicialmente el texto es completamente transparente */
+    transition: opacity 0.3s ease; /* Agrega una transición suave de 0.3s para la opacidad */
+    z-index: 2; /* Asegura que el texto se muestre sobre la imagen */
+}
+
+.contenedorrr:hover .imagen {
+    transform: scale(1.05); /* Pequeño zoom para mejorar el efecto */
+}
+
+.contenedorrr:hover::after {
+    background: rgba(0, 0, 0, 0.7); /* Oscurece la imagen al hacer hover */
+}
+
+.contenedorrr:hover .texto1 {
+    opacity: 1;
+}
+
+
+       
