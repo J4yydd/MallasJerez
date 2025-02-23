@@ -2,7 +2,7 @@
 :root {  /*sirve para hacer nuestras propias variables */
     --blanco : #ffffff;
     --oscuro: #212121;
-    --primario: #FFC107;
+    --primario: #ff0707;
     --secundario: #0097A7;
     --gris: #757575;
 
@@ -28,7 +28,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
 .titulo{   /*no es recomendado usar id*/ 
     text-align:center;
     font-size: 3.9rem;
-    color: var(--secundario); /* esta es la manera de poner nuestras variables*/
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
   
 }
@@ -77,7 +77,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
   
 }
 .nav-bg{
-    background-color: var(--secundario);/* cuando ponemos esto, se aplica a tooodo el color de fondo*/
+    background-color: var(--gris);/* cuando ponemos esto, se aplica a tooodo el color de fondo*/
 
 }
 @media(min-width: 480px) {
@@ -113,6 +113,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
    position: relative; /* esto es necesario para poder tener una posicion absoluta en el contendo hero*/
 }
 .contenido-hero{
+
     position: absolute;
      background-color: rgba(0,0,0,.5 );/* esto espara poder darle oscuridad a la imagen*/
     bottom: 0;
@@ -124,6 +125,13 @@ body {                           /*  las dos primeras opciones de arrba es para 
   
 
 
+}
+.superpuesta {
+    position: absolute;
+    top: 50%;   /* Ajusta la posición vertical */
+    left: 50%;  /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    width: 300px; /* Ajusta el tamaño de la imagen superpuesta */
 }
 
 
