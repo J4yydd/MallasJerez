@@ -27,19 +27,34 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 .titulo{   /*no es recomendado usar id*/ 
     text-align:center;
-    font-size: 3.9rem;
+    font-size: 1.9rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: var(--primario);
+    
+    max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+   
   
 }
 .titulo{
 
-    font-size : 3rem;
+    font-size : 5rem;
  
 }
 .titulo span{
-    font-size :2rem; 
+    font-size :1rem; 
     
+}
+.subtitulo{   /*no es recomendado usar id*/ 
+    text-align:center;
+    font-size: 3.9rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    
+  
 }
 .nav-main{
     color : var(--blanco);
@@ -56,14 +71,14 @@ body {                           /*  las dos primeras opciones de arrba es para 
     color : var(--blanco);
     text-decoration: none;/* esto es para que en las palabras de navegacion no se vean con una linea abajo, en si el none es para que no se vea nada */
     font-weight: 700;/* esto es para hacerlo en negritas*/
-    padding: 1rem;/* esto lo que hace es darle grosor a la barra de color, a diferencia del margin que solo da el espaciado, sin embargo
+    padding: 2rem;/* esto lo que hace es darle grosor a la barra de color, a diferencia del margin que solo da el espaciado, sin embargo
     depende de el espacio del  margin el grosor del padding*/
     
 
 }
 .nav-main a:hover{
     background-color: var(--primario);
-    color: var(--oscuro);
+    color: var(--blanco);
    
 }
 .contenedor{  /* esto en si es como se va a ver el disenio de las navegaciones*/
@@ -107,9 +122,9 @@ body {                           /*  las dos primeras opciones de arrba es para 
 .hero{
     background-image: url(../img/hero.jpg);/* esto es para poder importar la imagen desde css*/
     background-size: cover; /* esto es para que cubra todo el espacio de la pagina*/
-    padding: 20px;
-    background-repeat: no-repeat;
-   height: 450px;
+    padding: 100px; /* Agrega un espacio interno de 20 píxeles alrededor del contenido del elemento */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    height: 800px; /* Establece la altura del elemento en 450 píxeles */
    position: relative; /* esto es necesario para poder tener una posicion absoluta en el contendo hero*/
 }
 .contenido-hero{
@@ -131,7 +146,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
     top: 50%;   /* Ajusta la posición vertical */
     left: 50%;  /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra la imagen */
-    width: 300px; /* Ajusta el tamaño de la imagen superpuesta */
+    width: 400px; /* Ajusta el tamaño de la imagen superpuesta */
 }
 
 
