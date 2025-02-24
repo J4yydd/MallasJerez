@@ -48,6 +48,25 @@ body {                           /*  las dos primeras opciones de arrba es para 
     font-size :1rem; 
     
 }
+.tituloServicios{
+    text-align:center;
+    font-size: 1.9rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: var(--oscuro);
+    
+    max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+    
+    font-size : 5rem;
+   
+
+
+}
+
+
 .subtitulo{   /*no es recomendado usar id*/ 
     text-align:center;
     font-size: 3.9rem;
@@ -64,6 +83,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
    /* flex-direction: column;*/ /* esto hace que las barras de navegaciones esten acomodadas por columna*/
    /* el flex end puede ser para ponerlos al final*/
    align-items: center;/* esto es como para poder aalinear aliniear horizontalmente*/
+   gap: .5rem; /* Aumenta la separación entre los elementos */
     
 
 }
@@ -71,8 +91,9 @@ body {                           /*  las dos primeras opciones de arrba es para 
     color : var(--blanco);
     text-decoration: none;/* esto es para que en las palabras de navegacion no se vean con una linea abajo, en si el none es para que no se vea nada */
     font-weight: 700;/* esto es para hacerlo en negritas*/
-    padding: 2rem;/* esto lo que hace es darle grosor a la barra de color, a diferencia del margin que solo da el espaciado, sin embargo
+    padding: 2.5rem;/* esto lo que hace es darle grosor a la barra de color, a diferencia del margin que solo da el espaciado, sin embargo
     depende de el espacio del  margin el grosor del padding*/
+    
     
 
 }
@@ -87,7 +108,8 @@ body {                           /*  las dos primeras opciones de arrba es para 
     margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
     margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
     margin-left: auto; /* lo q explique con el de r*/
-    margin: 0 auto 0 auto;  /* esto es exactamente lo mismo que lo de arriba, funciona como un reloj*/
+    margin: 0  auto 0 auto;  /* esto es exactamente lo mismo que lo de arriba, funciona como un reloj*/
+    
     
   
 }
@@ -208,6 +230,64 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 .contenedorrr:hover .texto1 {
     opacity: 1;
+}
+
+
+
+
+
+.carousel {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10%);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background 0.9s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1); /* Solo crece el tamaño */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Más sombra al hacer hover */
+}
+
+#prev {
+    left: 15px;
+    top: 125px;
+}
+
+#next {
+    right: 15px;
+    top: 125px;
 }
 
 
