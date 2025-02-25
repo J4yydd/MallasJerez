@@ -1,0 +1,32 @@
+    <div class="contenedorrr">
+        <img src="./img/hero.jpg" alt="Imagen" class="imagen">
+        <div class="texto1">
+           <h3> El principal logo de la empresa</h3>
+      
+        </div>
+        <div class="subtexto1">
+
+        </div>
+ 
+    </div>
+
+
+
+
+    
+    <div class="carousel">
+        <button id="prev" class="nav-btn">◀</button>
+        <div class="carousel-container">
+            <img src="./img/hero.jpg" alt="Imagen" class="imagen" class="carousel-item">
+            <img src="./img/pruebaa.jpg" class="carousel-item">
+            <img src="./img/pruebaa.jpg" class="carousel-item">
+        </div>
+        <button id="next" class="nav-btn">▶</button>
+    </div>
+
+    
+
+    <script src="imagenesC.js"></script>
+    <script src="nevegacionEstatica.js"></script>
+</body>
+</html>
